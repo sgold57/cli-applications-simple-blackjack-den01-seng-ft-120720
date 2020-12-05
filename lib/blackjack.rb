@@ -65,8 +65,14 @@ def runner
   welcome
   hand_total = initial_round
   until hand_total > 21
+<<<<<<< HEAD
     hand_total = hit?(hand_total)
     display_card_total(hand_total)
   end
   puts "Sorry, you hit #{hand_total}. Thanks for playing!"
+=======
+    display_card_total(hit?(hand_total))
+  end
+  puts "Game Over"
+>>>>>>> 9118b518af565acaf7be8893946524511dd35873
 end
